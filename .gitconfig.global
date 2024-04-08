@@ -1,0 +1,46 @@
+[push]
+	default = current
+	autoSetupRemote = true
+
+[init]
+  defaultBranch = main
+
+[user]
+  name = Niklas Wagner
+  email = Skaro@Skaronator.com
+
+[pull]
+  rebase = false
+
+[merge]
+  conflictstyle = zdiff3
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
+[rerere]
+  # remembers how you resolved merge conflicts during a git rebase and automatically resolves conflicts
+  enabled = true
+
+[help]
+  autocorrect = 5
+
+[core]
+	pager = delta
