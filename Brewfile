@@ -1,4 +1,5 @@
 # Main
+brew 'bash-completion'
 brew 'atuin'
 
 # Kubernetes
