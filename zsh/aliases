@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SCRIPT_DIR=$(cd -- "$(dirname -- "$(readlink -f -- "$0" || echo "$0")")" && pwd)
+
+alias t='terraform'
+alias k='kubectl'
+alias d='docker'
+alias dc='docker compose'
+
+alias brewfile='(cd "$SCRIPT_DIR/../brew" && brew bundle install && install_krew_plugins)'

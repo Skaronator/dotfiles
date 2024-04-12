@@ -398,8 +398,6 @@
         }
       },
       "hashicorp/tap/terraform": {
-        "version": "1.5.7",
-        "bottle": false
       },
       "bash-completion": {
         "version": "1.3_3",

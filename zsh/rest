@@ -1,0 +1,21 @@
+#!/bin/bash
+SCRIPT_DIR=$(cd -- "$(dirname -- "$0")" && pwd)
+
+# Homebrew
+install_krew_plugins() {
+  if command -v kubectl &> /dev/null && kubectl krew version &> /dev/null; then
+    kubectl krew update
+    kubectl krew install rook-ceph
+    kubectl krew install oidc-login
+    kubectl krew install cnpg
+  fi
+}
+
+alias brewfile='(cd "$SCRIPT_DIR/brew" && brew bundle install && install_krew_plugins)'
+export HOMEBREW_NO_ENV_HINTS="false"
+
+# Kubernetes
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export KUBE_EDITOR=nano
+# Disable k0s telemetry
+export DISABLE_TELEMETRY=true

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+[ -f /home/linuxbrew/.linuxbrew/bin/brew ] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+command -v atuin >/dev/null 2>&1 && eval "$(atuin init zsh)"
+
+command -v helm >/dev/null 2>&1 && eval "$(helm completion zsh)"
+
+command -v docker >/dev/null 2>&1 && eval "$(docker completion zsh)"
+command -v docker >/dev/null 2>&1 && complete -F __start_docker d
+
+command -v kubectl >/dev/null 2>&1 && eval "$(kubectl completion zsh)"
+command -v kubectl >/dev/null 2>&1 && complete -F __start_kubectl k
+
+command -v terraform >/dev/null 2>&1 && complete -C "$(which terraform)" terraform
+command -v terraform >/dev/null 2>&1 && complete -C "$(which terraform)" t
