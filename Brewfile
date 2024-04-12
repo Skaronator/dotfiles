@@ -1,6 +1,6 @@
 # Main
-brew 'bash-completion'
 brew 'atuin'
+brew 'micro'
 
 # Kubernetes
 brew 'kubernetes-cli'
