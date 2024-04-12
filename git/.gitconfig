@@ -63,11 +63,3 @@
 [oh-my-zsh]
 	remote = origin
 	branch = master
-
-[remote "origin"]
-	url = https://github.com/Homebrew/brew
-	fetch = +refs/heads/*:refs/remotes/origin/*
-
-[homebrew]
-	analyticsmessage = true
-	caskanalyticsmessage = true
