@@ -44,3 +44,28 @@
 
 [core]
 	pager = delta
+	eol = lf
+	autocrlf = false
+	symlinks = true
+
+[lfs]
+	repositoryformatversion = 0
+
+[fsck]
+	zeroPaddedFilemode = ignore
+
+[fetch "fsck"]
+	zeroPaddedFilemode = ignore
+
+[receive "fsck"]
+	zeroPaddedFilemode = ignore
+
+[oh-my-zsh]
+	remote = origin
+	branch = master
+[remote "origin"]
+	url = https://github.com/Homebrew/brew
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[homebrew]
+	analyticsmessage = true
+	caskanalyticsmessage = true
