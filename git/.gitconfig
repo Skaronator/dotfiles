@@ -63,3 +63,6 @@
 [oh-my-zsh]
 	remote = origin
 	branch = master
+
+[includeIf "hasconfig:remote.*.url:**.finatix.de:*/**"]
+	path = ~/.fiantix.gitconfig

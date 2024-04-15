@@ -1,0 +1,5 @@
+[user]
+	signingkey = 7DBF8139C6028317
+	email = n.wagner@finatix.de
+[commit]
+	gpgSign = true

@@ -56,6 +56,7 @@ link_file() {
 
 
 link_file "$SCRIPT_DIR/git/.gitconfig" "$HOME/.gitconfig"
+link_file "$SCRIPT_DIR/git/.fiantix.gitconfig" "$HOME/.fiantix.gitconfig"
 link_file "$SCRIPT_DIR/git/.gitignore" "$HOME/.gitignore"
 
 link_file "$SCRIPT_DIR/atuin" "$HOME/.config/atuin"
