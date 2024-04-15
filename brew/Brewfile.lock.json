@@ -398,6 +398,8 @@
         }
       },
       "hashicorp/tap/terraform": {
+        "version": "1.8.0",
+        "bottle": false
       },
       "bash-completion": {
         "version": "1.3_3",
@@ -539,6 +541,12 @@
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
         "Homebrew/homebrew-core": "api",
         "GCC": "12.2.0"
+      },
+      "Fedora release 39 (Thirty Nine)": {
+        "HOMEBREW_VERSION": "4.2.17",
+        "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
+        "Homebrew/homebrew-core": "api",
+        "GCC": "13.2.1"
       }
     }
   }
