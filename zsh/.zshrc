@@ -108,3 +108,11 @@ files=($(find -L "$SCRIPT_DIR" -type f ! -name ".zshrc" -print))
 for file in "${files[@]}"; do
   source "$file"
 done
+
+# Load necessary widgets
+autoload -Uz up-line-or-beginning-search
+autoload -Uz down-line-or-beginning-search
+
+# Bind the widgets to the up and down arrow keys
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search

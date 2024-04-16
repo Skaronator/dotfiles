@@ -2,7 +2,7 @@
 
 [ -f /home/linuxbrew/.linuxbrew/bin/brew ] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-command -v atuin >/dev/null 2>&1 && eval "$(atuin init zsh)"
+command -v atuin >/dev/null 2>&1 && eval "$(atuin init zsh --disable-up-arrow)"
 
 command -v helm >/dev/null 2>&1 && eval "$(helm completion zsh)"
 
