@@ -12,3 +12,4 @@ brew 'helm'
 brew 'siderolabs/tap/talosctl'
 brew 'k0sproject/tap/k0sctl'
 brew 'hashicorp/tap/terraform'
+brew 'cmctl' # cert-manager
