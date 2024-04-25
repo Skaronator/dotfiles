@@ -398,7 +398,7 @@
         }
       },
       "hashicorp/tap/terraform": {
-        "version": "1.8.0",
+        "version": "1.8.2",
         "bottle": false
       },
       "bash-completion": {
@@ -625,7 +625,7 @@
   "system": {
     "linux": {
       "Debian GNU/Linux 12 (bookworm) (bookworm)": {
-        "HOMEBREW_VERSION": "4.2.17",
+        "HOMEBREW_VERSION": "4.2.19",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
         "Homebrew/homebrew-core": "api",
         "GCC": "12.2.0"
