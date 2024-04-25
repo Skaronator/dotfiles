@@ -16,6 +16,6 @@ brew 'hashicorp/tap/terraform'
 brew 'cmctl' # cert-manager
 
 # ZSH
-
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
+brew 'powerlevel10k'
