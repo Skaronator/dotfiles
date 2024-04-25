@@ -2,11 +2,11 @@
 SCRIPT_DIR=$(cd -- "$(dirname -- "$0")" && pwd)
 
 user () {
-  printf "\r  [ \033[0;33m??\033[0m ] $1\n"
+  printf "\r  [ \033[0;33m??\033[0m ] %s\n" "$1"
 }
 
 success () {
-  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] %s\n" "$1"
 }
 
 # Main function
@@ -14,7 +14,8 @@ link_file() {
   local src=$1 dst=$2
 
   if [ -f "$dst" ] || [ -d "$dst" ] || [ -L "$dst" ]; then
-    local currentSrc="$(readlink "$dst")"
+    local currentSrc
+    currentSrc="$(readlink "$dst")"
 
     if [ "$currentSrc" == "$src" ]; then
       success "skipped $src"
@@ -22,7 +23,7 @@ link_file() {
     else
       user "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
       [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all?"
-      read -n 1 action
+      read -r -n 1 action
 
       case "$action" in
         o) overwrite=true;;
@@ -49,8 +50,8 @@ link_file() {
   fi
 
   if [ "${skip:-$skip_all}" != "true" ]; then
-    ln -s "$1" "$2"
-    success "linked $1 to $2"
+    ln -s "$src" "$dst"
+    success "linked $src to $dst"
   fi
 }
 
