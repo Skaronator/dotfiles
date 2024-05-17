@@ -192,6 +192,8 @@
         }
       },
       "int128/kubelogin/kubelogin": {
+        "version": "v1.28.0",
+        "bottle": false
       },
       "atuin": {
         "version": "18.2.0",
@@ -771,7 +773,7 @@
   "system": {
     "linux": {
       "Debian GNU/Linux 12 (bookworm) (bookworm)": {
-        "HOMEBREW_VERSION": "4.3.0-66-gc269524",
+        "HOMEBREW_VERSION": "4.3.0-78-gb8d844c",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
         "Homebrew/homebrew-core": "api",
         "GCC": "12.2.0"

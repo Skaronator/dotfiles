@@ -14,7 +14,6 @@ brewfile() {
   if command -v kubectl &> /dev/null && kubectl krew version &> /dev/null; then
     kubectl krew update
     kubectl krew install rook-ceph
-    kubectl krew install oidc-login
     kubectl krew install cnpg
   fi
 }
