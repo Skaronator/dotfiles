@@ -5,7 +5,6 @@ brew 'micro'
 # Kubernetes
 brew 'kubernetes-cli'
 brew 'kustomize'
-brew 'krew'
 brew 'k9s'
 brew 'kubeseal'
 brew 'trivy'
@@ -16,6 +15,8 @@ brew 'k0sproject/tap/k0sctl'
 brew 'hashicorp/tap/terraform'
 brew 'int128/kubelogin/kubelogin'
 brew 'cmctl' # cert-manager
+brew 'kubectl-cnpg'
+brew 'kubectl-rook-ceph'
 
 # ZSH
 brew 'zsh-autosuggestions'
