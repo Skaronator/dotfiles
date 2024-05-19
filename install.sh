@@ -61,5 +61,6 @@ link_file "$SCRIPT_DIR/git/.finatix.gitconfig" "$HOME/.finatix.gitconfig"
 link_file "$SCRIPT_DIR/git/.gitignore" "$HOME/.gitignore"
 
 link_file "$SCRIPT_DIR/atuin" "$HOME/.config/atuin"
+link_file "$SCRIPT_DIR/k9s" "$HOME/.config/k9s"
 link_file "$SCRIPT_DIR/zsh-config/.zshrc" "$HOME/.zshrc"
 link_file "$SCRIPT_DIR/zsh-config/.p10k.zsh" "$HOME/.p10k.zsh"

@@ -7,16 +7,18 @@ brew 'kubernetes-cli'
 brew 'kustomize'
 brew 'k9s'
 brew 'kubeseal'
-brew 'trivy'
 brew 'argocd'
 brew 'helm'
-brew 'siderolabs/tap/talosctl'
 brew 'k0sproject/tap/k0sctl'
-brew 'hashicorp/tap/terraform'
 brew 'int128/kubelogin/kubelogin'
 brew 'cmctl' # cert-manager
 brew 'kubectl-cnpg'
 brew 'kubectl-rook-ceph'
+
+# DevOps Tools
+brew 'dive'
+brew 'trivy'
+brew 'hashicorp/tap/terraform'
 
 # ZSH
 brew 'zsh-autosuggestions'

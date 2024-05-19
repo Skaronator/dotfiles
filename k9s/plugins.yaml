@@ -1,0 +1,66 @@
+plugins:
+  cert-status:
+    shortCut: Shift-S
+    confirm: false
+    description: Certificate status
+    scopes:
+      - certificates
+    command: bash
+    background: false
+    args:
+      - -c
+      - "cmctl status certificate --context $CONTEXT -n $NAMESPACE $NAME |& less"
+  cert-renew:
+    shortCut: Shift-R
+    confirm: false
+    description: Certificate renew
+    scopes:
+      - certificates
+    command: bash
+    background: false
+    args:
+      - -c
+      - "cmctl renew --context $CONTEXT -n $NAMESPACE $NAME |& less"
+  secret-inspect:
+    shortCut: Shift-I
+    confirm: false
+    description: Inspect secret
+    scopes:
+      - secrets
+    command: bash
+    background: false
+    args:
+      - -c
+      - "cmctl inspect secret --context $CONTEXT -n $NAMESPACE $NAME |& less"
+  secret-openssl-ca:
+    shortCut: Ctrl-O
+    confirm: false
+    description: Openssl ca.crt
+    scopes:
+      - secrets
+    command: bash
+    background: false
+    args:
+      - -c
+      - kubectl get secret --context $CONTEXT -n $NAMESPACE $NAME -o jsonpath='{.data.ca\.crt}' | base64 -d | openssl storeutl -noout -text -certs /dev/stdin |& less
+  secret-openssl-tls:
+    shortCut: Shift-O
+    confirm: false
+    description: Openssl tls.crt
+    scopes:
+      - secrets
+    command: bash
+    background: false
+    args:
+      - -c
+      - kubectl get secret --context $CONTEXT -n $NAMESPACE $NAME -o jsonpath='{.data.tls\.crt}' | base64 -d | openssl storeutl -noout -text -certs /dev/stdin |& less
+  dive:
+    shortCut: d
+    confirm: false
+    description: "Dive image"
+    scopes:
+      - containers
+    command: dive
+    background: false
+    args:
+      - $COL-IMAGE
