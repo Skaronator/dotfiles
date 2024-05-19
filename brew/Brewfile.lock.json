@@ -891,6 +891,10 @@
             }
           }
         }
+      },
+      "robusta-dev/krr/krr": {
+        "version": "1.8.3",
+        "bottle": false
       }
     },
     "tap": {

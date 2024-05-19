@@ -14,6 +14,7 @@ brew 'int128/kubelogin/kubelogin'
 brew 'cmctl' # cert-manager
 brew 'kubectl-cnpg'
 brew 'kubectl-rook-ceph'
+brew 'robusta-dev/homebrew-krr/krr'
 
 # DevOps Tools
 brew 'dive'
