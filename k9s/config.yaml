@@ -7,10 +7,11 @@ k9s:
   ui:
     enableMouse: false
     headless: false
-    logoless: false
+    logoless: true
     crumbsless: false
     reactive: false
     noIcons: false
+    skin: custom
   skipLatestRevCheck: false
   disablePodCounting: false
   shellPod:
@@ -20,12 +21,12 @@ k9s:
       cpu: 100m
       memory: 100Mi
   imageScans:
-    enable: false
+    enable: true
     exclusions:
       namespaces: []
       labels: {}
   logger:
-    tail: 100
+    tail: 250
     buffer: 5000
     sinceSeconds: -1
     fullScreen: false
