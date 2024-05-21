@@ -65,4 +65,4 @@
 	branch = master
 
 [includeIf "hasconfig:remote.*.url:**.finatix.de:*/**"]
-	path = ~/.fiantix.gitconfig
+	path = ~/.finatix.gitconfig
