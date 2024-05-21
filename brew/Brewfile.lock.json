@@ -895,6 +895,50 @@
       "robusta-dev/krr/krr": {
         "version": "1.8.3",
         "bottle": false
+      },
+      "popeye": {
+        "version": "0.21.3",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/popeye/blobs/sha256:dc9b26b43fc91067ebf4a5c39e0326fa77637ec4f0b3d6cd44e543bb7f2e94fe",
+              "sha256": "dc9b26b43fc91067ebf4a5c39e0326fa77637ec4f0b3d6cd44e543bb7f2e94fe"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/popeye/blobs/sha256:2240a4317ad953f08642deed1e4155aceb921bf2b2b8a6d3adb58b2602b7240c",
+              "sha256": "2240a4317ad953f08642deed1e4155aceb921bf2b2b8a6d3adb58b2602b7240c"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/popeye/blobs/sha256:73efd455efcb25766afadee9ea50286fe0598cd53adec7b31eacf7e5b4d35d30",
+              "sha256": "73efd455efcb25766afadee9ea50286fe0598cd53adec7b31eacf7e5b4d35d30"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/popeye/blobs/sha256:1915c4db3a9e5a51ab8cfad694f5bb93a1b21c5ad4816734edbde9fa5f0d618c",
+              "sha256": "1915c4db3a9e5a51ab8cfad694f5bb93a1b21c5ad4816734edbde9fa5f0d618c"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/popeye/blobs/sha256:612214672ece1851568821efbabd314cb96cc293c686c9723578dcf333e915fa",
+              "sha256": "612214672ece1851568821efbabd314cb96cc293c686c9723578dcf333e915fa"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/popeye/blobs/sha256:45d5ea2df07c4706c6d3cbe1826a58014e6be8384e6c3d155f997276f2ddc05d",
+              "sha256": "45d5ea2df07c4706c6d3cbe1826a58014e6be8384e6c3d155f997276f2ddc05d"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/popeye/blobs/sha256:766e4649aabbed1589d86a72a8f9f53bcdf5139195f71aac9ea871f4a573ce78",
+              "sha256": "766e4649aabbed1589d86a72a8f9f53bcdf5139195f71aac9ea871f4a573ce78"
+            }
+          }
+        }
       }
     },
     "tap": {
