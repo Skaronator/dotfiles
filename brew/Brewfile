@@ -1,6 +1,12 @@
+tap 'k0sproject/tap'
+tap 'int128/kubelogin'
+tap 'robusta-dev/homebrew-krr'
+tap 'hashicorp/tap'
+
 # Main
 brew 'atuin'
 brew 'micro'
+brew 'starship'
 
 # Kubernetes
 brew 'kubernetes-cli'
