@@ -2,6 +2,7 @@ tap 'k0sproject/tap'
 tap 'int128/kubelogin'
 tap 'robusta-dev/homebrew-krr'
 tap 'hashicorp/tap'
+tap 'siderolabs/tap'
 
 # Main
 brew 'atuin'
@@ -17,6 +18,7 @@ brew 'kubeseal'
 brew 'argocd'
 brew 'helm'
 brew 'k0sproject/tap/k0sctl'
+brew 'siderolabs/tap/talosctl'
 brew 'int128/kubelogin/kubelogin'
 brew 'cmctl' # cert-manager
 brew 'kubectl-cnpg'
@@ -27,6 +29,7 @@ brew 'robusta-dev/homebrew-krr/krr'
 brew 'dive'
 brew 'trivy'
 brew 'hashicorp/tap/terraform'
+brew 'go-task'
 
 # ZSH
 brew 'zsh-autosuggestions'
