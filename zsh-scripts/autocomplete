@@ -20,6 +20,7 @@ command -v atuin >/dev/null 2>&1 && eval "$(atuin init zsh --disable-up-arrow)"
 
 command -v helm >/dev/null 2>&1 && eval "$(helm completion zsh)"
 command -v trivy >/dev/null 2>&1 && eval "$(trivy completion zsh)"
+command -v talosctl >/dev/null 2>&1 && eval "$(talosctl completion zsh)"
 
 command -v docker >/dev/null 2>&1 && eval "$(docker completion zsh)"
 command -v docker >/dev/null 2>&1 && complete -F __start_docker d
