@@ -47,6 +47,7 @@
 	eol = lf
 	autocrlf = false
 	symlinks = true
+	excludesFile = ~/.gitignore
 
 [lfs]
 	repositoryformatversion = 0
