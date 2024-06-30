@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "k0sproject/tap": {
-        "revision": "c1795d4106ec87f6a86ad6c309d53cdcaa9f6c9e"
+        "revision": "ab40d488ae6904b7a3cb5793dfaffafa3e23b471"
       },
       "int128/kubelogin": {
         "revision": "8a5a0d4302b411764af508b2fb1097162cac6e75"
@@ -14,7 +14,7 @@
         "revision": "30cbe09a703fc7d866a7beed821db89bef83d6a8"
       },
       "siderolabs/tap": {
-        "revision": "cd25fdd7926055e463f34d0698f642ca641ccb59"
+        "revision": "d3f99ae5bb3d9e0e828ff4ed956b2c76bdf49eb9"
       }
     },
     "brew": {
@@ -459,15 +459,25 @@
         }
       },
       "k0sproject/tap/k0sctl": {
-        "version": "0.18.0",
+        "version": "0.18.1",
         "bottle": {
           "rebuild": 0,
-          "root_url": "https://github.com/k0sproject/homebrew-tap/releases/download/k0sctl-0.18.0",
+          "root_url": "https://github.com/k0sproject/homebrew-tap/releases/download/k0sctl-0.18.1",
           "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://github.com/k0sproject/homebrew-tap/releases/download/k0sctl-0.18.1/k0sctl-0.18.1.arm64_sonoma.bottle.tar.gz",
+              "sha256": "f5acd43f7e0c94dbfe0e6116ed668fbfc17478a25d3af30bc83c8e4bb200475f"
+            },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://github.com/k0sproject/homebrew-tap/releases/download/k0sctl-0.18.0/k0sctl-0.18.0.ventura.bottle.tar.gz",
-              "sha256": "7a4a4a0c80d238368f08c4ea939e093d15452e033fb029a96506110365c73c02"
+              "url": "https://github.com/k0sproject/homebrew-tap/releases/download/k0sctl-0.18.1/k0sctl-0.18.1.ventura.bottle.tar.gz",
+              "sha256": "7ceda2a9638b02819788ab524d487ef7b9c1fab633809db3469d41dd5affd5e3"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://github.com/k0sproject/homebrew-tap/releases/download/k0sctl-0.18.1/k0sctl-0.18.1.x86_64_linux.bottle.tar.gz",
+              "sha256": "0df2ebf82bc3cc6bcfa16d94af2765960bdfb6ac34fd61b7d7acbdbd1ec4bbdf"
             }
           }
         }
@@ -701,7 +711,7 @@
         }
       },
       "hashicorp/tap/terraform": {
-        "version": "1.8.3",
+        "version": "1.8.4",
         "bottle": false
       },
       "zsh-autosuggestions": {
@@ -853,13 +863,57 @@
       "siderolabs/tap/talosctl": {
         "version": "1.7.5",
         "bottle": false
+      },
+      "talhelper": {
+        "version": "3.0.2",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/talhelper/blobs/sha256:55dfa4bb54e4ea400ea7cb11c858303b5b075223e2fcf42c960a85880dff11ca",
+              "sha256": "55dfa4bb54e4ea400ea7cb11c858303b5b075223e2fcf42c960a85880dff11ca"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/talhelper/blobs/sha256:0097d7b58dfafa55b8520ac5d79389c2a6325792a5e53b44dcc2a4892d55d810",
+              "sha256": "0097d7b58dfafa55b8520ac5d79389c2a6325792a5e53b44dcc2a4892d55d810"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/talhelper/blobs/sha256:515c03d8b29e738f98eb2e194a11e55c19b0910eef56e43d58b789e94be6ce23",
+              "sha256": "515c03d8b29e738f98eb2e194a11e55c19b0910eef56e43d58b789e94be6ce23"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/talhelper/blobs/sha256:e1ce782b77c3ddfafb078b85dcb87b3b57e76364be1829ae50e4e8f4f474600e",
+              "sha256": "e1ce782b77c3ddfafb078b85dcb87b3b57e76364be1829ae50e4e8f4f474600e"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/talhelper/blobs/sha256:5f04b44aa73df1ab9c9b2cc54157153afd4097b75a2d0fd307fa785abf777cdc",
+              "sha256": "5f04b44aa73df1ab9c9b2cc54157153afd4097b75a2d0fd307fa785abf777cdc"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/talhelper/blobs/sha256:4ccdd341cb70f364236a0f13848520a9f4cdd30053df2d50eb38f2d09186d853",
+              "sha256": "4ccdd341cb70f364236a0f13848520a9f4cdd30053df2d50eb38f2d09186d853"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/talhelper/blobs/sha256:91449a88d8955b00680a319f4ee77306f9fcdf201bd30a84dbaa312216f3074e",
+              "sha256": "91449a88d8955b00680a319f4ee77306f9fcdf201bd30a84dbaa312216f3074e"
+            }
+          }
+        }
       }
     }
   },
   "system": {
     "linux": {
       "Debian GNU/Linux 12 (bookworm) (bookworm)": {
-        "HOMEBREW_VERSION": "4.3.2-44-g15dc76c",
+        "HOMEBREW_VERSION": "4.3.7-47-g09223c7",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
         "Homebrew/homebrew-core": "api",
         "GCC": "12.2.0"

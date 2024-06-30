@@ -18,12 +18,15 @@ brew 'kubeseal'
 brew 'argocd'
 brew 'helm'
 brew 'k0sproject/tap/k0sctl'
-brew 'siderolabs/tap/talosctl'
 brew 'int128/kubelogin/kubelogin'
 brew 'cmctl' # cert-manager
 brew 'kubectl-cnpg'
 brew 'kubectl-rook-ceph'
 brew 'robusta-dev/homebrew-krr/krr'
+
+# Kubernetes: Talos
+brew 'talhelper'
+brew 'siderolabs/tap/talosctl'
 
 # DevOps Tools
 brew 'dive'
