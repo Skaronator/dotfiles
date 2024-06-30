@@ -907,6 +907,50 @@
             }
           }
         }
+      },
+      "cilium-cli": {
+        "version": "0.16.11",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/cilium-cli/blobs/sha256:bae581573cc97bd7e16f319d553c049116e652bfdb04468d627321553a05bef0",
+              "sha256": "bae581573cc97bd7e16f319d553c049116e652bfdb04468d627321553a05bef0"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/cilium-cli/blobs/sha256:c0cde3801f97ce3011839d3ee58c3c24ea8bf4b56731a79e7bfe14b0c0f9be05",
+              "sha256": "c0cde3801f97ce3011839d3ee58c3c24ea8bf4b56731a79e7bfe14b0c0f9be05"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/cilium-cli/blobs/sha256:152cde93e2e8e30d739de04609fae1cdd34146cacd555f0d81ebf38fef39d558",
+              "sha256": "152cde93e2e8e30d739de04609fae1cdd34146cacd555f0d81ebf38fef39d558"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/cilium-cli/blobs/sha256:270a8014b1cc7f60d5045d068369d336d1fa5c220a52480602d3bdc2f4e1d64f",
+              "sha256": "270a8014b1cc7f60d5045d068369d336d1fa5c220a52480602d3bdc2f4e1d64f"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/cilium-cli/blobs/sha256:285f42eb3b571b64b0d03478d72de6b4528b8ca5f13042e9af57b5d9061fa588",
+              "sha256": "285f42eb3b571b64b0d03478d72de6b4528b8ca5f13042e9af57b5d9061fa588"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/cilium-cli/blobs/sha256:33561ae6ebab7c1ff9578a9312b82cd17d8a32644bf4c93cc3ca0a16514f80a6",
+              "sha256": "33561ae6ebab7c1ff9578a9312b82cd17d8a32644bf4c93cc3ca0a16514f80a6"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/cilium-cli/blobs/sha256:bd3994f8b580302e44023113cf828c2b04ef31add6c0cedb3babf16b3b8c9b9b",
+              "sha256": "bd3994f8b580302e44023113cf828c2b04ef31add6c0cedb3babf16b3b8c9b9b"
+            }
+          }
+        }
       }
     }
   },

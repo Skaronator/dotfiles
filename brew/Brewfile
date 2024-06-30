@@ -19,10 +19,11 @@ brew 'argocd'
 brew 'helm'
 brew 'k0sproject/tap/k0sctl'
 brew 'int128/kubelogin/kubelogin'
-brew 'cmctl' # cert-manager
 brew 'kubectl-cnpg'
 brew 'kubectl-rook-ceph'
 brew 'robusta-dev/homebrew-krr/krr'
+brew 'cilium-cli'
+brew 'cmctl' # cert-manager
 
 # Kubernetes: Talos
 brew 'talhelper'
