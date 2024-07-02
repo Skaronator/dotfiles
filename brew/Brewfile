@@ -3,6 +3,7 @@ tap 'int128/kubelogin'
 tap 'robusta-dev/homebrew-krr'
 tap 'hashicorp/tap'
 tap 'siderolabs/tap'
+tap 'kdash-rs/kdash'
 
 # Main
 brew 'atuin'
@@ -22,6 +23,7 @@ brew 'int128/kubelogin/kubelogin'
 brew 'kubectl-cnpg'
 brew 'kubectl-rook-ceph'
 brew 'robusta-dev/homebrew-krr/krr'
+brew 'kdash-rs/kdash/kdash'
 brew 'cilium-cli'
 brew 'cmctl' # cert-manager
 
