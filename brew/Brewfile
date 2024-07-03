@@ -37,6 +37,9 @@ brew 'trivy'
 brew 'hashicorp/tap/terraform'
 brew 'go-task'
 
+# Container Tools
+brew 'skopeo'
+
 # ZSH
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
