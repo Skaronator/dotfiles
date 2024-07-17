@@ -13,6 +13,13 @@ success () {
 link_file() {
   local src=$1 dst=$2
 
+  # Create the parent directory if it doesn't exist
+  local parent_dir=$(dirname "$dst")
+  if [ ! -d "$parent_dir" ]; then
+    mkdir -p "$parent_dir"
+    success "created directory $parent_dir"
+  fi
+
   if [ -f "$dst" ] || [ -d "$dst" ] || [ -L "$dst" ]; then
     local currentSrc
     currentSrc="$(readlink "$dst")"
