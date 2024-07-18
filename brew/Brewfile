@@ -36,6 +36,7 @@ brew 'dive'
 brew 'trivy'
 brew 'hashicorp/tap/terraform'
 brew 'go-task'
+brew 'opentofu'
 
 # Container Tools
 brew 'skopeo'
