@@ -8,6 +8,8 @@ alias d='docker'
 alias dc='docker compose'
 
 brewfile() {
-  cd "$SCRIPT_DIR/../brew" || return
-  brew bundle "$1"
+  (
+    cd "$SCRIPT_DIR/../brew" || return
+    brew bundle "$1"
+  )
 }
