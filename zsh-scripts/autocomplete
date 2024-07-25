@@ -22,11 +22,14 @@ command -v helm >/dev/null 2>&1 && eval "$(helm completion zsh)"
 command -v trivy >/dev/null 2>&1 && eval "$(trivy completion zsh)"
 command -v talosctl >/dev/null 2>&1 && eval "$(talosctl completion zsh)"
 
-command -v docker >/dev/null 2>&1 && eval "$(docker completion zsh)"
-command -v docker >/dev/null 2>&1 && complete -F __start_docker d
-
 command -v kubectl >/dev/null 2>&1 && eval "$(kubectl completion zsh)"
 command -v kubectl >/dev/null 2>&1 && complete -F __start_kubectl k
 
 command -v terraform >/dev/null 2>&1 && complete -C "$(which terraform)" terraform
 command -v terraform >/dev/null 2>&1 && complete -C "$(which terraform)" t
+
+# More advanced if for WSL2
+if docker --version >/dev/null 2>&1; then
+  eval "$(docker completion zsh)"
+  complete -F __start_docker d
+fi
