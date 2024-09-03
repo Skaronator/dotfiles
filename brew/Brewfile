@@ -4,11 +4,12 @@ tap 'robusta-dev/homebrew-krr'
 tap 'hashicorp/tap'
 tap 'siderolabs/tap'
 tap 'kdash-rs/kdash'
+tap 'jandedobbeleer/oh-my-posh'
 
 # Main
 brew 'atuin'
 brew 'micro'
-brew 'starship'
+brew 'git-delta'
 
 # Kubernetes
 brew 'kubernetes-cli'
@@ -45,3 +46,4 @@ brew 'skopeo'
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
 brew 'powerlevel10k'
+brew 'jandedobbeleer/oh-my-posh/oh-my-posh'
