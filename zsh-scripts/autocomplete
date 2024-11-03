@@ -6,7 +6,6 @@ if command -v brew >/dev/null 2>&1; then
   plugins=(
     "zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
     "zsh-autosuggestions/zsh-autosuggestions.zsh"
-    "powerlevel10k/powerlevel10k.zsh-theme"
   )
 
   for plugin in "${plugins[@]}"; do

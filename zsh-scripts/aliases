@@ -1,7 +1,5 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(cd -- "$(dirname -- "$(readlink -f -- "$0" || echo "$0")")" && pwd)
-
 alias t='terraform'
 alias k='kubectl'
 alias d='docker'
@@ -9,7 +7,7 @@ alias dc='docker compose'
 
 brewfile() {
   (
-    cd "$SCRIPT_DIR/../brew" || return
+    cd "$DOTFILES_DIR/brew" || return
     brew upgrade
     brew bundle "$1"
   )

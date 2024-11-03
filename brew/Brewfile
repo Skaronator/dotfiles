@@ -4,7 +4,6 @@ tap 'robusta-dev/homebrew-krr'
 tap 'hashicorp/tap'
 tap 'siderolabs/tap'
 tap 'kdash-rs/kdash'
-tap 'jandedobbeleer/oh-my-posh'
 
 # Main
 brew 'atuin'
@@ -43,7 +42,11 @@ brew 'opentofu'
 brew 'skopeo'
 
 # ZSH
+brew 'zsh'
+brew 'zsh-completions'
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
-brew 'powerlevel10k'
-brew 'jandedobbeleer/oh-my-posh/oh-my-posh'
+brew 'oh-my-posh'
+
+# Python
+brew 'ruff'
