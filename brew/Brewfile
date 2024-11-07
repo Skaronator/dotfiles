@@ -27,18 +27,23 @@ brew 'robusta-dev/homebrew-krr/krr'
 brew 'kdash-rs/kdash/kdash'
 brew 'cilium-cli'
 brew 'cmctl' # cert-manager
+brew 'velero'
 
 # Kubernetes: Talos
 brew 'talhelper'
 brew 'siderolabs/tap/talosctl'
 
+# Terraform
+brew 'hashicorp/tap/terraform'
+brew 'terragrunt'
+brew 'opentofu'
+brew 'tflint'
+
 # DevOps Tools
 brew 'awscli'
 brew 'dive'
 brew 'trivy'
-brew 'hashicorp/tap/terraform'
-brew 'terragrunt'
-brew 'opentofu'
+brew 'hashicorp/tap/vault'
 brew 'go-task'
 
 # Container Tools
