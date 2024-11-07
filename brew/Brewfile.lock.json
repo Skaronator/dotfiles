@@ -1037,6 +1037,45 @@
             }
           }
         }
+      },
+      "terragrunt": {
+        "version": "0.68.7",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sequoia": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/terragrunt/blobs/sha256:eec21c4c4d4de904022de738b2bc5da6cd0254feb1e93a8b0720ca4a07a63397",
+              "sha256": "eec21c4c4d4de904022de738b2bc5da6cd0254feb1e93a8b0720ca4a07a63397"
+            },
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/terragrunt/blobs/sha256:eec21c4c4d4de904022de738b2bc5da6cd0254feb1e93a8b0720ca4a07a63397",
+              "sha256": "eec21c4c4d4de904022de738b2bc5da6cd0254feb1e93a8b0720ca4a07a63397"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/terragrunt/blobs/sha256:eec21c4c4d4de904022de738b2bc5da6cd0254feb1e93a8b0720ca4a07a63397",
+              "sha256": "eec21c4c4d4de904022de738b2bc5da6cd0254feb1e93a8b0720ca4a07a63397"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/terragrunt/blobs/sha256:75e21b109d3a607a7ae6f425e9d9bc22b86ae414d31b75e024681a6959c99add",
+              "sha256": "75e21b109d3a607a7ae6f425e9d9bc22b86ae414d31b75e024681a6959c99add"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/terragrunt/blobs/sha256:75e21b109d3a607a7ae6f425e9d9bc22b86ae414d31b75e024681a6959c99add",
+              "sha256": "75e21b109d3a607a7ae6f425e9d9bc22b86ae414d31b75e024681a6959c99add"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/terragrunt/blobs/sha256:c71e4e665f25e569bb788078e402ed43d07f4c447a450ddf5525458410657f29",
+              "sha256": "c71e4e665f25e569bb788078e402ed43d07f4c447a450ddf5525458410657f29"
+            }
+          }
+        }
       }
     }
   },
