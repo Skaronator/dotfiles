@@ -14,7 +14,8 @@ link_file() {
   local src=$1 dst=$2
 
   # Create the parent directory if it doesn't exist
-  local parent_dir=$(dirname "$dst")
+  local parent_dir
+  parent_dir=$(dirname "$dst")
   if [ ! -d "$parent_dir" ]; then
     mkdir -p "$parent_dir"
     success "created directory $parent_dir"
@@ -64,7 +65,7 @@ link_file() {
 
 
 link_file "$SCRIPT_DIR/git/.gitconfig" "$HOME/.gitconfig"
-link_file "$SCRIPT_DIR/git/.finatix.gitconfig" "$HOME/.finatix.gitconfig"
+link_file "$SCRIPT_DIR/git/.fp.gitconfig" "$HOME/.fp.gitconfig"
 link_file "$SCRIPT_DIR/git/.gitignore" "$HOME/.gitignore"
 
 link_file "$SCRIPT_DIR/atuin" "$HOME/.config/atuin"

@@ -65,5 +65,5 @@
 	remote = origin
 	branch = master
 
-[includeIf "hasconfig:remote.*.url:**.finatix.de:*/**"]
-	path = ~/.finatix.gitconfig
+[includeIf "hasconfig:remote.*.url:**.fp.de:*/**"]
+	path = ~/.fp.gitconfig

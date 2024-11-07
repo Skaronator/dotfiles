@@ -33,6 +33,7 @@ brew 'talhelper'
 brew 'siderolabs/tap/talosctl'
 
 # DevOps Tools
+brew 'awscli'
 brew 'dive'
 brew 'trivy'
 brew 'hashicorp/tap/terraform'
