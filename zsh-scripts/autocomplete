@@ -28,6 +28,9 @@ command -v kubectl >/dev/null 2>&1 && complete -F __start_kubectl k
 command -v terraform >/dev/null 2>&1 && complete -C "$(which terraform)" terraform
 command -v terraform >/dev/null 2>&1 && complete -C "$(which terraform)" t
 
+command -v terragrunt >/dev/null 2>&1 && complete -o nospace -C "$(which terraform)" terragrunt
+command -v terragrunt >/dev/null 2>&1 && complete -o nospace -C "$(which terraform)" tg
+
 # More advanced if for WSL2
 if docker --version >/dev/null 2>&1; then
   eval "$(docker completion zsh)"
