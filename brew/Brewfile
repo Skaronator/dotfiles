@@ -28,6 +28,7 @@ brew 'kdash-rs/kdash/kdash'
 brew 'cilium-cli'
 brew 'cmctl' # cert-manager
 brew 'velero'
+brew 'istioctl'
 
 # Kubernetes: Talos
 brew 'talhelper'
