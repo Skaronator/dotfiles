@@ -63,12 +63,18 @@ link_file() {
   fi
 }
 
+if [[ "$(uname)" == "Darwin" ]]; then
+    CONFIG_DIR="$HOME/Library/Application Support"
+else
+    CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}"
+fi
+
 
 link_file "$SCRIPT_DIR/git/.gitconfig" "$HOME/.gitconfig"
 link_file "$SCRIPT_DIR/git/.fp.gitconfig" "$HOME/.fp.gitconfig"
 link_file "$SCRIPT_DIR/git/.gitignore" "$HOME/.gitignore"
 
-link_file "$SCRIPT_DIR/atuin" "$HOME/.config/atuin"
-link_file "$SCRIPT_DIR/k9s" "$HOME/.config/k9s"
+link_file "$SCRIPT_DIR/atuin" "$CONFIG_DIR/atuin"
+link_file "$SCRIPT_DIR/k9s" "$CONFIG_DIR/k9s"
 link_file "$SCRIPT_DIR/zsh-config/.zshrc" "$HOME/.zshrc"
 link_file "$SCRIPT_DIR/zsh-config/.p10k.zsh" "$HOME/.p10k.zsh"

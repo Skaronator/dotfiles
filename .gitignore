@@ -1,2 +1,4 @@
 Brewfile.lock.json
 zsh-scripts/secrets
+k9s/clusters
+k9s/k9s.log
