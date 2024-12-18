@@ -47,6 +47,9 @@ brew 'trivy'
 brew 'hashicorp/tap/vault'
 brew 'go-task'
 
+# DB Tools
+brew 'redis' # for debugging with redis-cli
+
 # Container Tools
 brew 'skopeo'
 
